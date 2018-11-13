@@ -2,12 +2,23 @@
 #include <iostream>
 using namespace std;
 
+void Print::test() {
+    cout << "more nonsense\n";
+}
+
 Print::Print() {
-    q = 123;
-    for (; y < 111; ++y);
+    x = 777;
+    q = 213;
+    for (; y < 444; ++y);
+    test();
+}
+
+void Print::more() {
+    cout << x << "extra function called\n";
 }
 
 void Print::print() {
+    more();
     extra();
     cout << "test " << q << " " << y << endl;
 }
